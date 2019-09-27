@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import com.tcc_bus.BuildConfig;
 import com.tcc_bus.R;
 
+// @react-native-community/netinfo
+import com.reactnativecommunity.netinfo.NetInfoPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-vector-icons
@@ -50,6 +52,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
+      new NetInfoPackage(),
       new RNGestureHandlerPackage(),
       new VectorIconsPackage()
     ));
