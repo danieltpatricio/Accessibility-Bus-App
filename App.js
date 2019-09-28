@@ -1,16 +1,14 @@
-
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-import StartApp from './src/screens/login/start-app';
+import Routes from './src/routes';
+// import checkConnection from './src/api/checkConnection';
 console.disableYellowBox = true;
-import checkConnection from './src/api/checkConnection';
+
+function App(params) {
+  return (
+    <Routes />
+  )
+}
 
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: StartApp,
-  },
-});
 
-export default createAppContainer(AppNavigator);
+export default App;
